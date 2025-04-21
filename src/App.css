@@ -1,0 +1,83 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  background: #ffffff;
+  color: #222;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.App.dark {
+  background: #1a1a1a;
+  color: #eaeaea;
+}
+
+.App.accessible {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  background: #f0f4f8;
+  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+  word-wrap: break-word;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+li strong {
+  color: #0056b3;
+}
+
+.App.dark li {
+  background: #2c2c2c;
+  color: #dbdbdb;
+}
+
+.App.dark li strong {
+  color: #4aa8ff;
+}
+
+button {
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  margin: 0.3rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 119, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #005fcc;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+  background: #004a99;
+}
